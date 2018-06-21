@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactNative, {AppRegistry} from 'react-native';
-// import App from './App';
-
+import {Text, AppRegistry} from 'react-native';
+import Header from './src/components/Header'
 
 const App = () => {
     return(
-        <Text>Some Text</Text>
+            <Header headerText={'Albums'}/>
     )
 }
 AppRegistry.registerComponent('albums', () => App);
+//first arg has to match name of project
